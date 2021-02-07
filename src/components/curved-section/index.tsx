@@ -1,23 +1,42 @@
 import React, { ReactNode } from 'react';
-import { Container, ArrowDown, Content, Row } from './styles';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
+import { Container, Content } from './styles';
 
 type Props = {
   children?: ReactNode | ReactNode[];
 };
 
 const CurvedSection: React.FC<Props> = ({ children }) => {
-  console.log(children);
+  const data = useStaticQuery(graphql`
+    query {
+      subtractPlaceholder: file(relativePath: { eq: "subtract.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      additionPlaceholder: file(relativePath: { eq: "addition.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Container>
-      <Row>
-        <ArrowDown left />
-        <ArrowDown right />
-      </Row>
+      {!!data?.subtractPlaceholder?.childImageSharp?.fluid && (
+        <Img fluid={data.subtractPlaceholder.childImageSharp.fluid} />
+      )}
       <Content>{children}</Content>
-      <Row>
-        <ArrowDown left invert />
-        <ArrowDown right invert />
-      </Row>
+      {!!data?.subtractPlaceholder?.childImageSharp?.fluid && (
+        <Img fluid={data.additionPlaceholder.childImageSharp.fluid} />
+      )}
     </Container>
   );
 };
