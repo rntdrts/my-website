@@ -30,11 +30,7 @@ const Presentation = (): JSX.Element => {
     <Container>
       <ImageContainer>
         <ImageWrapper>
-          {!data?.placeholderImage?.childImageSharp?.fluid ? (
-            <div>Picture not found</div>
-          ) : (
-            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-          )}
+          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         </ImageWrapper>
       </ImageContainer>
       <Content>

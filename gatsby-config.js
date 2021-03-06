@@ -15,17 +15,18 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    // {
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     name: 'gatsby-starter-default',
-    //     short_name: 'starter',
-    //     start_url: '/',
-    //     background_color: '#101214',
-    //     theme_color: '#00C8E3',
-    //     display: 'minimal-ui',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#101214',
+        theme_color: '#00C8E3',
+        display: 'minimal-ui',
+        icon: 'src/images/rntdrt-icon 1@2x.png',
+      },
+    },
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-google-fonts',

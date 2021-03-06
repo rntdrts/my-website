@@ -9,6 +9,7 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex: 1;
+  padding: 60px 0;
 `;
 
 export const Column = styled.div`
@@ -67,7 +68,7 @@ export const Tech = styled.div`
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 60px;
+  padding-left: 66px;
   align-items: center;
   min-height: 36px;
 
@@ -78,10 +79,10 @@ export const Tech = styled.div`
   &:after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 36px;
-    height: 36px;
+    bottom: 12px;
+    left: 36px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: #101214;
   }
