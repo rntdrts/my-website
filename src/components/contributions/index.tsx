@@ -15,7 +15,7 @@ import github from '../../clients/github/index';
 import medium from '../../clients/medium/index';
 import Github from '../../svgs/github';
 import Medium from '../../svgs/medium';
-import Separator from '../../svgs/Separator';
+import Separator from '../../svgs/separator';
 
 const MAX_CONTRIBUTIONS = 3;
 
