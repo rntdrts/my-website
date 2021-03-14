@@ -9,7 +9,7 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 60px 0;
+  padding: 180px 0 60px;
 `;
 
 export const Column = styled.div`

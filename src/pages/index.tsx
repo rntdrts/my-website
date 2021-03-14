@@ -5,7 +5,8 @@ import Layout from '../components/layout/index';
 import SEO from '../components/seo';
 import Presentation from '../components/presentation/index';
 import Skills from '../components/skills/index';
-import Colaborations from '../components/colaborations/index';
+import Collaborations from '../components/collaborations/index';
+import Contributions from '../components/contributions/index';
 
 type Props = {
   location: WindowLocation;
@@ -16,7 +17,8 @@ const Homepage: React.FC<Props> = ({ location }) => (
     <SEO title='Renato Duarte - Homepage' />
     <Presentation />
     <Skills />
-    <Colaborations />
+    <Collaborations />
+    <Contributions />
   </Layout>
 );
 

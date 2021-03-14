@@ -10,7 +10,7 @@ import {
   Tech,
 } from './styles';
 
-import CurvedSection from '../curved-section/index';
+import CurvedSection from '../subtract-section/index';
 import FrontEnd from '../../svgs/frontend.svg';
 import BackEnd from '../../svgs/backend.svg';
 import DevOps from '../../svgs/devops.svg';

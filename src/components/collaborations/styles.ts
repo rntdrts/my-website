@@ -47,6 +47,7 @@ export const Card = styled.div`
   mix-blend-mode: normal;
   border-radius: 24px;
   border: 4px solid #131618;
+  cursor: pointer;
 
   &:hover {
     background: linear-gradient(
